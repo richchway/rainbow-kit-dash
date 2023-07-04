@@ -1,7 +1,7 @@
 import AnimatedBanner from './animatedBanner';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
-// import  {getRainbowKitProvider}  from './rainbowKit';
+import  {getRainbowKitProvider}  from './rainbowKit';
 import layout from './layout';
 import uniswap from "./uniswap.png";
 
@@ -13,7 +13,7 @@ import uniswap from "./uniswap.png";
 function Page() {
   return (
     <>
-    {/*<RainbowKitWrapper>*/}
+    <RainbowKitWrapper>
       <div>
         <div>
         </div>
@@ -39,7 +39,7 @@ function Page() {
           </div>
         </div>
       </div>
-      {/*</RainbowKitWrapper>*/}
+      </RainbowKitWrapper>
     </>
   );
 }
