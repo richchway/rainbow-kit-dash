@@ -5,10 +5,10 @@ import  {getRainbowKitProvider}  from './rainbowKit';
 import layout from './layout';
 import uniswap from "./uniswap.png";
 
-// const RainbowKitWrapper = dynamic(() => import('./rainbowKit').then((module) => module.getRainbowKitProvider), {
-//   ssr: false, // Prevents server-side rendering of this component
-//   loading: () => <div>Loading...</div> // Custom loading component
-// });
+const RainbowKitWrapper = dynamic(() => import('./rainbowKit').then((module) => module.getRainbowKitProvider), {
+  ssr: false, // Prevents server-side rendering of this component
+  loading: () => <div>Loading...</div> // Custom loading component
+});
 
 function Page() {
   return (
